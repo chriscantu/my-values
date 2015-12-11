@@ -12,4 +12,4 @@ Simple list of the values I try to live by
 * **Have fun in all my work**
 
 # Why do this?
-The challenges of life often distract us from what really matters most to us.  I want to better hold myself accountable to my values and what matters most to me.  By publicizing this list, others will know who I aspire to be.
+The challenges of life often distract us from what really matters most.  I want to better hold myself accountable to my values and what matters most to me.  By publicizing this list, others will know who I aspire to be.
