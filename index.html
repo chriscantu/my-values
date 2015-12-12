@@ -17,46 +17,7 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h1>
-
-<p>Simple list of the values I try to live by</p>
-
-<h1>
-<a id="values" class="anchor" href="#values" aria-hidden="true"><span class="octicon octicon-link"></span></a>Values</h1>
-
-<ul>
-<li>
-<strong>Family First</strong>
-    <ul>
-        <li>Despite my commitment to my work and what it means to me, I will always place the needs of my family first</li>
-    </ul>
-</li>
-<li>
-<strong>Mission:</strong>
-
-<ul>
-<li>To serve something bigger than myself</li>
-<li>To balance all of my decisions, comments and actions on what best supports our mission</li>
-</ul>
-</li>
-<li>
-<strong>Serve Coworkers and Customers....in that order</strong>
-
-<ul>
-<li>To treat all by the 'Platinum Rule' - <em>Treat others like they want to be treated</em>
-</li>
-</ul>
-</li>
-<li><strong>To Dare Greatly & attempt to Rise Strong</strong></li>
-<li><strong>Have fun in all my work</strong></li>
-</ul>
-
-<h1>
-<a id="why-do-this" class="anchor" href="#why-do-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why do this?</h1>
-
-<p>The challenges of life often distract us from what really matters most.  I want to better hold myself accountable to my values and what matters most to me.  By publicizing this list, others will know who I aspire to be.</p>
-
+      <div class="markdown-content"></div>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/chriscantu/my-values">My-Values</a> is maintained by <a href="https://github.com/chriscantu">chriscantu</a>.</span>
 
@@ -64,6 +25,21 @@
       </footer>
 
     </section>
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.3.0/dist/showdown.min.js"></script>
+    <script>
+        (function() {
+            var xhr = new XMLHttpRequest();
+            var converter = new showdown.Converter();
+            xhr.open('GET', 'README.md', true);
+
+            xhr.onload = function(data) {
+                var div = document.querySelector('div.markdown-content');
+                div.innerHTML = converter.makeHtml(this.response);
+            }
+
+            xhr.send();
+        })();
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
